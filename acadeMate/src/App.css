@@ -1,3 +1,193 @@
+/* ── AcadeMate Layout ── */
+.app-container {
+  width: 100%;
+}
+
+.app-header {
+  padding: 24px 32px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.app-header h1 {
+  font-size: 2rem;
+  margin: 0 0 16px;
+}
+
+.app-main {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: left;
+}
+
+/* ── GPA Summary ── */
+.gpa-summary {
+  display: flex;
+  gap: 32px;
+  padding: 16px 20px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+
+/* ── Add Student Form ── */
+.add-student-form {
+  background: var(--social-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px 24px;
+}
+
+.add-student-form h2 {
+  margin: 0 0 16px;
+  font-size: 1.1rem;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.form-row input {
+  flex: 1 1 160px;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text-h);
+  font-size: 0.9rem;
+}
+
+.form-row input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.form-row button {
+  padding: 8px 20px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.form-row button:hover {
+  opacity: 0.85;
+}
+
+.form-error {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin: 0 0 12px;
+}
+
+/* ── Student Table ── */
+.student-table-wrapper h2 {
+  margin: 0 0 16px;
+  font-size: 1.1rem;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.student-table th,
+.student-table td {
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.student-table th {
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-bg);
+}
+
+.student-table tr:hover td {
+  background: var(--social-bg);
+}
+
+.editing-row td {
+  background: var(--accent-bg);
+}
+
+.editing-row input {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid var(--accent-border);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--text-h);
+  font-size: 0.875rem;
+  box-sizing: border-box;
+}
+
+.action-cell {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-edit,
+.btn-delete,
+.btn-save,
+.btn-cancel {
+  padding: 5px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.btn-edit   { background: var(--accent-bg); color: var(--accent); border: 1px solid var(--accent-border); }
+.btn-delete { background: #fee2e2; color: #ef4444; border: 1px solid #fca5a5; }
+.btn-save   { background: #d1fae5; color: #059669; border: 1px solid #6ee7b7; }
+.btn-cancel { background: var(--social-bg); color: var(--text); border: 1px solid var(--border); }
+
+/* ── Async UI States ── */
+.spinner {
+  text-align: center;
+  padding: 40px;
+  color: var(--text);
+}
+
+.error-banner {
+  background: #fee2e2;
+  border: 1px solid #fca5a5;
+  border-radius: 10px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #ef4444;
+}
+
+.error-banner button {
+  padding: 6px 16px;
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.empty-msg {
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+/* ── Courses Page (existing) ── */
 .courses-page {
   max-width: 1100px;
   margin: 0 auto;
