@@ -1,0 +1,10 @@
+{
+  "students": [
+    { "id": 1, "name": "Alice Johnson",  "studentId": "STU001", "major": "Computer Science", "gpa": 3.8 },
+    { "id": 2, "name": "Bob Smith",      "studentId": "STU002", "major": "Mathematics",       "gpa": 3.1 },
+    { "id": 3, "name": "Carol White",    "studentId": "STU003", "major": "Physics",            "gpa": 3.5 },
+    { "id": 4, "name": "David Brown",    "studentId": "STU004", "major": "Chemistry",          "gpa": 2.4 },
+    { "id": 5, "name": "Eva Martinez",   "studentId": "STU005", "major": "Computer Science",   "gpa": 3.9 },
+    { "id": 6, "name": "Frank Lee",      "studentId": "STU006", "major": "Biology",            "gpa": 2.8 }
+  ]
+}

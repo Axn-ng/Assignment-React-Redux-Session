@@ -1,10 +1,13 @@
+// Step 3 — เพิ่ม studentsApi reducer + middleware (slide 26)
 import { configureStore } from '@reduxjs/toolkit'
-import courseReducer from './courseSlice'
+import { studentsApi } from '../features/students/studentsApi'
 
 const store = configureStore({
   reducer: {
-    courses: courseReducer,
+    [studentsApi.reducerPath]: studentsApi.reducer,
   },
+  middleware: (getDefault) =>
+    getDefault().concat(studentsApi.middleware),
 })
 
 export default store
