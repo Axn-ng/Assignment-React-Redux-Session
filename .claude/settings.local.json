@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python *)",
+      "Bash(pip list *)",
+      "Bash(py --version)",
+      "Read(//usr/**)",
+      "Bash(conda run *)",
+      "Bash(/c/Users/Acer/miniconda3/python.exe *)",
+      "Bash(npm create *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)"
+    ]
+  }
+}
