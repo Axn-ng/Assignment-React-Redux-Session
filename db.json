@@ -1,0 +1,8 @@
+{
+  "students": [
+    { "id": 1, "name": "สมชาย ใจดี", "major": "Computer Science", "year": 2, "gpa": 3.5 },
+    { "id": 2, "name": "สมหญิง รักเรียน", "major": "Information Technology", "year": 2, "gpa": 3.8 },
+    { "id": 3, "name": "วิชัย เก่งมาก", "major": "Software Engineering", "year": 4, "gpa": 3.92 },
+    { "id": 4, "name": "นภา ดาวรุ่ง", "major": "Data Science", "year": 1, "gpa": 3.2 }
+  ]
+}
