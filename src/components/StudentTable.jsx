@@ -29,12 +29,7 @@ function StudentTable() {
     isFetching,
     isError,
     refetch,
-  } = useGetStudentsQuery(undefined, {
-    pollingInterval: 30_000,
-    refetchOnFocus: true,
-    refetchOnReconnect: true,
-    refetchOnMountOrArgChange: true,
-  })
+  } = useGetStudentsQuery()
 
   const [updateStudent] = useUpdateStudentMutation()
   const [deleteStudent] = useDeleteStudentMutation()
