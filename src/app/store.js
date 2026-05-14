@@ -1,15 +1,13 @@
+// Session 6 — Step 3: ลบ studentsSlice ออก เพิ่ม studentsApi (slide 26)
 import { configureStore } from '@reduxjs/toolkit'
-import { setupListeners } from '@reduxjs/toolkit/query'
 import { studentsApi } from '../features/students/studentsApi'
 
-export const store = configureStore({
+const store = configureStore({
   reducer: {
     [studentsApi.reducerPath]: studentsApi.reducer,
   },
-  middleware: getDefaultMiddleware =>
-    getDefaultMiddleware().concat(studentsApi.middleware),
+  middleware: (getDefault) =>
+    getDefault().concat(studentsApi.middleware),
 })
-
-setupListeners(store.dispatch)
 
 export default store

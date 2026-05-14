@@ -1,22 +1,30 @@
-import AddStudentForm from './components/AddStudentForm'
+import GpaSummary from './components/GpaSummary'
 import StudentTable from './components/StudentTable'
-
-const styles = {
-  wrapper: { maxWidth: 960, margin: '0 auto', padding: '2rem', fontFamily: 'system-ui, sans-serif' },
-  header: { background: '#1e2a6e', color: '#fff', padding: '1.5rem 2rem', borderRadius: 8, marginBottom: '1.5rem' },
-  title: { margin: 0, fontSize: '1.6rem' },
-  subtitle: { margin: '0.25rem 0 0', fontSize: '0.9rem', opacity: 0.75 },
-}
+import StudentForm from './components/StudentForm'
+import './App.css'
 
 function App() {
   return (
-    <div style={styles.wrapper}>
-      <div style={styles.header}>
-        <h1 style={styles.title}>AcadeMate — Session 8</h1>
-        <p style={styles.subtitle}>Testing & Deploy · Vitest · MSW · Vercel</p>
-      </div>
-      <AddStudentForm />
-      <StudentTable />
+    <div className="app">
+      <header className="app-header">
+        <h1>AcadeMate</h1>
+        <p>Session 8 — Testing & Deploy</p>
+      </header>
+
+      <main className="app-main">
+        <section className="section-form">
+          <StudentForm />
+        </section>
+
+        <section className="section-summary">
+          <GpaSummary />
+        </section>
+
+        <section className="section-table">
+          <h2>รายชื่อนักศึกษา</h2>
+          <StudentTable />
+        </section>
+      </main>
     </div>
   )
 }

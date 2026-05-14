@@ -1,25 +1,41 @@
 {
   "students": [
     {
-      "name": "สมหญิง รักเรียน",
-      "major": "Information Technology",
-      "year": 4,
-      "gpa": 3.79,
-      "id": 2
+      "id": "1",
+      "name": "Alice Johnsonee",
+      "major": "Computer Science",
+      "gpa": 3.8
     },
     {
-      "id": 3,
-      "name": "วิชัย เก่งมาก",
-      "major": "Software Engineering",
-      "year": 4,
-      "gpa": 3.92
+      "name": "Anugul Sompoch",
+      "major": "Mathematics",
+      "gpa": 3.1,
+      "id": "2"
     },
     {
-      "name": "Aaaa",
-      "course": "BCD",
-      "year": 1,
-      "gpa": 3,
-      "id": 4
+      "id": "3",
+      "name": "Carol White",
+      "major": "Physics",
+      "gpa": 3.5
+    },
+    {
+      "id": "4",
+      "name": "David Brown",
+      "major": "Chemistry",
+      "gpa": 2.4
+    },
+    {
+      "id": "5",
+      "name": "Eva Martinez",
+      "major": "Computer Science",
+      "gpa": 3.9
+    },
+    {
+      "id": "6",
+      "name": "Frank Lee",
+      "major": "Biology",
+      "gpa": 2.8
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
